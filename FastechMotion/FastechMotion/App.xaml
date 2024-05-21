@@ -1,0 +1,17 @@
+﻿<Application x:Class="FastechMotion.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FastechMotion"
+             xmlns:vm="clr-namespace:FastechMotion.ViewModels"
+             xmlns:v="clr-namespace:FastechMotion.Views"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:SingleMoveViewModel}">
+            <v:SingleMoveView />
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type vm:JogMoveViewModel}">
+            <v:JogMoveView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
