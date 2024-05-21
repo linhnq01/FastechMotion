@@ -9,5 +9,8 @@ namespace FastechMotion.ViewModels
     public class MainViewModel : ViewModelBase
     {
         public ViewModelBase SingleMoveCurrentView { get; set; } = new SingleMoveViewModel();
+        public ViewModelBase JogMoveViewModel { get; set; } = new JogMoveViewModel();
+        public ViewModelBase OriginViewModel { get; set; } = new OriginViewModel();
+        public ViewModelBase FunctionViewModel { get; set; } = new FunctionViewModel();
     }
 }

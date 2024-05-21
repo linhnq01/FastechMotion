@@ -13,5 +13,14 @@
         <DataTemplate DataType="{x:Type vm:JogMoveViewModel}">
             <v:JogMoveView />
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:OriginViewModel}">
+            <v:OriginView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:FunctionViewModel}">
+            <v:FunctionView />
+        </DataTemplate>
+
     </Application.Resources>
 </Application>
